@@ -1,3 +1,4 @@
+{ /*
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
@@ -120,3 +121,19 @@ function App() {
 }
 
 export default App
+*/
+}
+
+import Header from "./components/Header";
+
+
+export default function App() {
+  return (
+    <div className="font-body">
+      <Header />
+      <main>
+
+      </main>
+    </div>
+  );
+}
