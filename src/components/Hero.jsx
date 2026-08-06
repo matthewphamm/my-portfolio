@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 export default function Hero() {
   const [typed, setTyped] = useState("");
-  const fullText = "training models, not excuses.";
+  const fullText = "currently overfitting on coffee.";
 
   useEffect(() => {
     let i = 0;
