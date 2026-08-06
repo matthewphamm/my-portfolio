@@ -125,14 +125,14 @@ export default App
 }
 
 import Header from "./components/Header";
-
+import Hero from "./components/Hero";
 
 export default function App() {
   return (
     <div className="font-body">
       <Header />
       <main>
-
+        <Hero />
       </main>
     </div>
   );
