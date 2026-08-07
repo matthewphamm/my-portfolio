@@ -5,7 +5,7 @@ export default function About() {
             <p className="font-body text-m leading-relaxed max-w-2xl">
                 I am a Computer Science student concentrating in Artificial Intelligence. I am consistently growing and learning, with hands-on experience
                 in building multiple GitHub projects, including data science applications, machine learning models, and AI-powered applications. Currently, 
-                I am learning how AI agents can help my workflow and using AI api's for applications. 
+                I am learning how AI agents can help my workflow and how AI api's can be implemented in future projects. 
                 <br />
                 <br />
                 In my free time, I enjoy outdoor activities such as hiking, soccer, and running. I'm also an avid film enthusiast, drawn to the creativity, 
