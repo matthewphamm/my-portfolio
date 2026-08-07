@@ -2,17 +2,37 @@ import { useState, useEffect } from "react";
 
 export default function Hero() {
   const [typed, setTyped] = useState("");
+  const [isDeleting, setIsDeleting] = useState(false);
   const fullText = "currently overfitting on coffee.";
 
   useEffect(() => {
-    let i = 0;
-    const interval = setInterval(() => {
-      setTyped(fullText.slice(0, i));
-      i++;
-      if (i > fullText.length) clearInterval(interval);
-    }, 45);
-    return () => clearInterval(interval);
-  }, []);
+    const typingSpeed = 45;
+    const deletingSpeed = 25;
+    const pauseAfterTyping = 1800;
+    const pauseAfterDeleting = 400;
+
+    let timeout;
+
+    if (!isDeleting && typed.length < fullText.length) {
+      // Typing forward
+      timeout = setTimeout(() => {
+        setTyped(fullText.slice(0, typed.length + 1));
+      }, typingSpeed);
+    } else if (!isDeleting && typed.length === fullText.length) {
+      // Full text reached — pause, then start deleting
+      timeout = setTimeout(() => setIsDeleting(true), pauseAfterTyping);
+    } else if (isDeleting && typed.length > 0) {
+      // Deleting backward
+      timeout = setTimeout(() => {
+        setTyped(fullText.slice(0, typed.length - 1));
+      }, deletingSpeed);
+    } else if (isDeleting && typed.length === 0) {
+      // Fully deleted — pause, then start typing again
+      timeout = setTimeout(() => setIsDeleting(false), pauseAfterDeleting);
+    }
+
+    return () => clearTimeout(timeout);
+  }, [typed, isDeleting, fullText]);
 
   return (
     <section className="max-w-4xl mx-auto px-6 pt-40 pb-24">
