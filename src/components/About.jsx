@@ -9,8 +9,7 @@ export default function About() {
                 <br />
                 <br />
                 In my free time, I enjoy outdoor activities such as hiking, soccer, and running. I'm also an avid film enthusiast, drawn to the creativity, 
-                cinematography, and storytelling that great films offer. I am currently seeking an internship opportunity to strengthen my skills and
-                gain hands-on, real-world experience.
+                cinematography, and storytelling that great films offer. 
             </p>
         </section>
     );
