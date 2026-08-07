@@ -40,7 +40,7 @@ export default function Hero() {
         <div className="flex-1">
           <p className="font-mono text-sm text-cobalt mb-4">// hello world</p>
           <h1 className="font-display font-bold text-5xl md:text-5xl leading-tight">
-            CS student building<br />AI systems that learn.
+            Hi, I'm Matt-a developer, designer, and student.
           </h1>
           <p className="font-mono text-ink-soft mt-6 text-lg h-6">
             {typed}<span className="animate-pulse">|</span>
