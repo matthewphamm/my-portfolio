@@ -10,5 +10,13 @@ export const projects = [
 ];
 
 export const skills = [
-    "Python", "Git", "Linux",
+    {name: "Python", category: "languages"},
+];
+
+export const skillCategories = [
+    {id: "all", label: "All"},
+    {id: "languages", label: "Languages"},
+    {id: "lib", label: "Libraries / Frameworks"},
+    {id: "tools", label: "Tools"},
+    {id: "misc", label: "Misc"},
 ];
