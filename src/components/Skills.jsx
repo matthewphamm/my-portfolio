@@ -4,8 +4,12 @@ import { skills, skillCategories } from "../data/projects";
 export default function Skills() {
   const [active, setActive] = useState("all");
 
+  const sortByName = (a, b) => a.name.localeCompare(b.name);
+
   const filtered =
-    active === "all" ? skills : skills.filter((s) => s.category === active);
+    active === "all"
+      ? skills
+      : skills.filter((s) => s.category === active).sort(sortByName);
 
   return (
     <section id="skills" className="max-w-4xl mx-auto px-6 py-20 border-t border-line">
