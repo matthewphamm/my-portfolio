@@ -9,7 +9,7 @@ export default function Contact() {
         Open for internships, collabs, and cool ideas. Let's talk.
       </p>
       <div className="flex gap-6 mt-8 font-mono text-sm">
-        <a href="mailto:matthewpham03@gmail.com" className="hover:text-cobalt transition-colors">email</a>
+        <a href="mailto:code@mattpham.dev" className="hover:text-cobalt transition-colors">email</a>
         <a href="https://github.com/matthewphamm" target="_blank" rel="noreferrer" className="hover:text-cobalt transition-colors">github</a>
         <a href="https://linkedin.com/in/matthewphamm" target="_blank" rel="noreferrer" className="hover:text-cobalt transition-colors">linkedin</a>
       </div>
