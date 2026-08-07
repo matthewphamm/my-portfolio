@@ -1,4 +1,5 @@
-import { skills } from "../data/projects";
+import { useState } from "react";
+import { skills, skillCategories } from "../data/projects";
 
 export default function Skills() {
   return (
