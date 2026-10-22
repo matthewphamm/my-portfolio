@@ -6,6 +6,30 @@ export const projects = [
         description: "Built and validated a football match outcome predictor using Elo ratings, Poisson regression, and Monte Carlo simulation on 49,000+ historical international matches",
         stack: ["Python", "Pandas", "NumPy", "Scikit-learn"],
         link: "https://github.com/matthewphamm/national-mens-team-predictor"
+    },
+    {
+        id: "watchnext",
+        title: "WatchNext",
+        tag: "Machine Learning",
+        description: "Movie recommendation web app that blends collaborative filtering (TruncatedSVD) and content-based filtering (TF-IDF) trained on 100,000+ MovieLens ratings, with instant cold-start recommendations and explainable matches",
+        stack: ["Python", "Scikit-learn", "FastAPI", "React"],
+        link: "https://github.com/matthewphamm/WatchNext"
+    },
+    {
+        id: "interactive-dog",
+        title: "3D Interactive Dog",
+        tag: "Computer Vision",
+        description: "Built as a team during a hackathon: turns a dog photo into a rigged 3D voxel model you can play fetch with in real time, using webcam hand-gesture tracking to pick up and throw the stick",
+        stack: ["TypeScript", "Three.js", "MediaPipe", "Vite"],
+        link: "https://github.com/Jaewon0407/3D-interactive-dog"
+    },
+    {
+        id: "crux",
+        title: "CRUX",
+        tag: "iOS App",
+        description: "A calm, personal bouldering log for iPhone with one-tap attempt and send logging, automatic sessions, project tracking, and a progress dashboard built on the Hex grading system",
+        stack: ["Swift", "SwiftUI", "SwiftData", "Swift Charts"],
+        link: "https://github.com/matthewphamm/crux"
     }
 ];
 
