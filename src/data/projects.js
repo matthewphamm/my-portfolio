@@ -25,7 +25,7 @@ export const projects = [
     },
     {
         id: "crux",
-        title: "CRUX",
+        title: "CRUX.",
         tag: "iOS App",
         description: "A calm, personal bouldering log for iPhone with one-tap attempt and send logging, automatic sessions, project tracking, and a progress dashboard built on the Hex grading system",
         stack: ["Swift", "SwiftUI", "SwiftData", "Swift Charts"],
